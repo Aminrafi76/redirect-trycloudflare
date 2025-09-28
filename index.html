@@ -2,15 +2,34 @@
 <html lang="fa">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="refresh" content="0; url=https://com-trees-developer-certificates.trycloudflare.com">
-  <title>Redirecting…</title>
+
+  <!-- جلوگیری از کش شدن -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+  <!-- متا رفرش با زمان صفر -->
+  <meta http-equiv="refresh" content="0; url=https://comes-cartridge-jersey-lbs.trycloudflare.com">
+
+  <title>در حال انتقال…</title>
   <meta name="robots" content="noindex, nofollow">
+
   <script>
-    // جاوااسکریپت به‌عنوان fallback و استفاده از replace برای جلوگیری از ثبت در history
-    window.location.replace("https://com-trees-developer-certificates.trycloudflare.com");
+    // لینک مقصد رو اینجا فقط تغییر بده
+    var target = "https://comes-cartridge-jersey-lbs.trycloudflare.com";
+
+    // اضافه کردن پارامتر زمان برای جلوگیری از کش
+    window.location.replace(target + "?t=" + Date.now());
   </script>
 </head>
 <body>
-  <p>در حال انتقال… اگر منتقل نشدید <a href="https://com-trees-developer-certificates.trycloudflare.com">اینجا کلیک کنید</a>.</p>
+  <p>در حال انتقال… اگر منتقل نشدید 
+    <a id="redirect-link" href="https://comes-cartridge-jersey-lbs.trycloudflare.com">اینجا کلیک کنید</a>.
+  </p>
+
+  <script>
+    // لینک fallback داخل body رو هم آپدیت می‌کنیم
+    document.getElementById("redirect-link").href = target + "?t=" + Date.now();
+  </script>
 </body>
 </html>
